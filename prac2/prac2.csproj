@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="check.png" />
+    <None Remove="free-icon-table-7426655.png" />
+    <None Remove="magnifer.png" />
+    <None Remove="pencil.png" />
+    <None Remove="table.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibCalc\LibCalc.csproj" />
+    <ProjectReference Include="..\MasEditor\MasEditor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="check.png" />
+    <Resource Include="magnifer.png" />
+    <Resource Include="table.png" />
+  </ItemGroup>
+
+</Project>
